@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+  <title>Space invaders</title>
+
+  <link rel="stylesheet" href="../assets/styles/style.css">
+
+</head>
+
+<body onkeydown="moveSelection(event)" onload="Invadermove(), enemyshoot(), start() " id="body">
+  <!--buttons-->
+  <p><button  class = "buttonl" id="left" onmousedown= "chleft()">Left</button></p>
+  <p><button  class = "buttonc" id="fire" onmousedown= "chfire()">Fire</button></p>
+  <p><button  class = "buttonr" id= "right" onmousedown= "chright()">Right</button></p>
+  <!--music-->
+  <audio controls autoplay style="display: none">
+    <source src="../game/sounds/bgmusic.mp3" type="audio/mp3" autostart="true">
+    Your browser does not support the audio element.
+  </audio>
+  <!--player-->
+  <div id="bar"></div>
+  <img id="player" src="../assets/images/player.png" class="player";>
+  <!--first wave!-->
+  <img  id="Invader1" src="../assets/images/invader.png" style="left:50%;"class="Invader1 nemesi">
+  <img  id="Invader2"  src="../assets/images/invader.png" style="left:45%;"class="Invader1 nemesi">
+  <img  id="Invader3" src="../assets/images/invader.png" style="left:40%;"class="Invader1 nemesi">
+  <img  id="Invader4" src="../assets/images/invader.png" style="left:35%;"class="Invader1 nemesi">
+  <img  id="Invader5" src="../assets/images/invader.png" style="left:30%;"class="Invader1 nemesi">
+  <img  id="Invader6" src="../assets/images/invader.png" style="left:25%;"class="Invader1 nemesi">
+  <img  id="Invader7" src="../assets/images/invader.png" style="left:20%;"class="Invader1 nemesi">
+  <img  id="Invader8" src="../assets/images/invader.png" style="left:15%;"class="Invader1 nemesi">
+  <img  id="Invader9" src="../assets/images/invader.png" style="left:55%;"class="Invader1 nemesi">
+  <img  id="Invader10" src="../assets/images/invader.png" style="left:60%;"class="Invader1 nemesi">
+  <img  id="Invader11" src="../assets/images/invader.png" style="left:65%;"class="Invader1 nemesi">
+  <img  id="Invader12" src="../assets/images/invader.png" style="left:70%;"class="Invader1 nemesi">
+  <img  id="Invader13" src="../assets/images/invader.png" style="left:75%;"class="Invader1 nemesi">
+  <img  id="Invader14" src="../assets/images/invader.png" style="left:80%;"class="Invader1 nemesi">
+  <img  id="Invader15" src="../assets/images/invader.png" style="left:85%;"class="Invader1 nemesi">
+  <!--second wave!-->
+  <img  id="Invader16"  src="../assets/images/invader.png" style="left:45%;"class="Invader2 nemesi">
+  <img  id="Invader17" src="../assets/images/invader.png" style="left:40%;"class="Invader2 nemesi">
+  <img  id="Invader18" src="../assets/images/invader.png" style="left:35%;"class="Invader2 nemesi">
+  <img  id="Invader19" src="../assets/images/invader.png" style="left:30%;"class="Invader2 nemesi">
+  <img  id="Invader20" src="../assets/images/invader.png" style="left:25%;"class="Invader2 nemesi">
+  <img  id="Invader21" src="../assets/images/invader.png" style="left:20%;"class="Invader2 nemesi">
+  <img  id="Invader22" src="../assets/images/invader.png" style="left:15%;"class="Invader2 nemesi">
+  <img  id="Invader23" src="../assets/images/invader.png" style="left:50%;"class="Invader2 nemesi">
+  <img  id="Invader24" src="../assets/images/invader.png" style="left:55%;"class="Invader2 nemesi">
+  <img  id="Invader25" src="../assets/images/invader.png" style="left:60%;"class="Invader2 nemesi">
+  <img  id="Invader26" src="../assets/images/invader.png" style="left:65%;"class="Invader2 nemesi">
+  <img  id="Invader27" src="../assets/images/invader.png" style="left:70%;"class="Invader2 nemesi">
+  <img  id="Invader28" src="../assets/images/invader.png" style="left:75%;"class="Invader2 nemesi">
+  <img  id="Invader29" src="../assets/images/invader.png" style="left:80%;"class="Invader2 nemesi">
+  <img  id="Invader30" src="../assets/images/invader.png" style="left:85%;"class="Invader2 nemesi">
+  <!--third wave!-->
+  <img  id="Invader31" src="../assets/images/invader.png" style="left:50%;"class="Invader3 nemesi">
+  <img  id="Invader32" src="../assets/images/invader.png" style="left:45%;"class="Invader3 nemesi">
+  <img  id="Invader33" src="../assets/images/invader.png" style="left:40%;"class="Invader3 nemesi">
+  <img  id="Invader34" src="../assets/images/invader.png" style="left:35%;"class="Invader3 nemesi">
+  <img  id="Invader35" src="../assets/images/invader.png" style="left:30%;"class="Invader3 nemesi">
+  <img  id="Invader36" src="../assets/images/invader.png" style="left:25%;"class="Invader3 nemesi">
+  <img  id="Invader37" src="../assets/images/invader.png" style="left:20%;"class="Invader3 nemesi">
+  <img  id="Invader38" src="../assets/images/invader.png" style="left:15%;"class="Invader3 nemesi">
+  <img  id="Invader39" src="../assets/images/invader.png" style="left:55%;"class="Invader3 nemesi">
+  <img  id="Invader40" src="../assets/images/invader.png" style="left:60%;"class="Invader3 nemesi">
+  <img  id="Invader41" src="../assets/images/invader.png" style="left:65%;"class="Invader3 nemesi">
+  <img  id="Invader42" src="../assets/images/invader.png" style="left:70%;"class="Invader3 nemesi">
+  <img  id="Invader43" src="../assets/images/invader.png" style="left:75%;"class="Invader3 nemesi">
+  <img  id="Invader44" src="../assets/images/invader.png" style="left:80%;"class="Invader3 nemesi">
+  <img  id="Invader45" src="../assets/images/invader.png" style="left:85%;"class="Invader3 nemesi">
+
+</body>
+<script src="../assets/scripts/main.js"></script>
+</html>

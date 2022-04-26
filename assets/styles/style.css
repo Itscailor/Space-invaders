@@ -1,0 +1,88 @@
+body{
+    background-image: url("../../assets/images/bg.png");
+    position:absolute;
+    height: 99%;
+    width: 99%;
+}
+
+#player {
+    min-width: 60px;
+    min-height: 40px;
+    position:absolute;
+    height: 8%;
+    width : 5%;
+    left:50%;
+    top:85%;
+    height: 6%;
+    width : 4%;
+    left:50%;
+    top:85%;
+  }
+
+  .button{
+    border-radius: 2px;
+    background-color: #008CBA;
+    font-size: 24px;
+    color: white;
+    border: none;
+  }
+
+  .buttonr{
+    height: 95%;
+    width: 33%;
+    position: absolute;
+    left:67%;
+    opacity: 0%;
+  }
+
+  .buttonc{
+    height: 95%;
+    position: absolute;
+    width: 33%;
+    left:34%;
+    opacity: 0%;
+  }
+
+  .buttonl{
+    height: 95%;
+    position: absolute;
+    width: 33%;
+    left:1%;
+    opacity: 0%;
+  }
+
+.hit{
+  opacity: 0;
+}
+
+.Invader1 {
+    min-width: 30px;
+    position: absolute;
+    top:5%;
+    height: 8%;
+    width: 4%;
+  }
+
+
+  .Invader2 {
+    min-width: 30px;
+    position:absolute;
+    top:20%;
+    height: 8%;
+    width: 4%;
+  }
+
+
+  .Invader3 {
+    min-width: 30px;
+    position:absolute;
+    top:35%;
+    height: 8%;
+    width: 4%;
+  }
+
+  .laser{
+    top:100px;
+    left:100px;
+    position:absolute;
+  }
